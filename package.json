@@ -6,7 +6,7 @@
   "homepage": "https://github.com/elouannd/elouannd.git",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp public/_redirects dist/",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
@@ -29,6 +29,7 @@
     "eslint-plugin-react-refresh": "^0.4.16",
     "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
-    "vite": "^6.0.5"
+    "vite": "^6.0.5",
+    "wrangler": "^3.107.0"
   }
 }
