@@ -1,0 +1,161 @@
+.calculator-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: white;
+  background: linear-gradient(
+    -45deg,
+    #FF6B6B,
+    #FF8E8E,
+    #FF4949,
+    #FF7676
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  position: relative; /* Add this to help position the language selector */
+}
+
+.calculator-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.input-group {
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group select,
+.input-group input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+}
+
+.results {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.language-selector {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.language-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.language-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.language-button.active {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.accessibility-controls {
+  position: absolute;
+  top: 1rem;
+  left: 1rem; /* Changed from right to left */
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.accessibility-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.accessibility-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.accessibility-button.active {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* High contrast mode styles */
+.high-contrast {
+  background: #000000;
+  color: #ffffff;
+}
+
+.high-contrast .calculator-content {
+  background: #333333;
+  border-color: #ffffff;
+}
+
+.high-contrast .input-group select,
+.high-contrast .input-group input,
+.high-contrast .language-button,
+.high-contrast .accessibility-button {
+  background: #000000;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.high-contrast .results {
+  background: #000000;
+  border: 1px solid #ffffff;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
