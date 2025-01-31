@@ -1,8 +1,40 @@
-# React + Vite
+# Note Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for calculating musical note frequencies and relationships. Built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Calculate frequency differences between musical notes
+- Support for both English note names (A, B, C) and Solfège (Do, Re, Mi)
+- Multilingual support (English/French)
+- High contrast mode for accessibility
+- Responsive design
+
+## Technologies Used
+
+- React 18
+- Vite
+- CSS Modules
+- Framer Motion
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/elouannd-site.git
+
+# Navigate to project directory
+cd elouannd-site
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
