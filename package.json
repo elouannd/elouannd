@@ -1,9 +1,9 @@
 {
-  "name": "elouannd-site",
+  "name": "elouannd",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/elouannd/elouannd.git",
+  "homepage": "https://elouannd.github.io/elouannd/",
   "scripts": {
     "dev": "vite",
     "build": "react-scripts build",
@@ -16,8 +16,7 @@
     "framer-motion": "^12.0.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.1.4",
-    "react-scripts": "^5.0.1"
+    "react-router-dom": "^7.1.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
