@@ -141,10 +141,20 @@ function NoteCalculator() {
               </option>
             ))}
           </select>
+          <label>Base Octave:</label>
+          <input
+            type="range"
+            min="0"
+            max="8"
+            value={baseOctave}
+            onChange={(e) => setBaseOctave(e.target.value)}
+          />
           <input
             type="number"
+            pattern="[0-9]*"
+            inputMode="numeric"
             value={baseOctave}
-            onChange={e => setBaseOctave(parseInt(e.target.value))}
+            onChange={(e) => setBaseOctave(e.target.value)}
           />
           <p>{formatFrequency(baseFrequency)}</p>
         </div>
@@ -157,8 +167,20 @@ function NoteCalculator() {
               </option>
             ))}
           </select>
+          <label>Compare Octave:</label>
+          <input
+            type="range"
+            min="0"
+            max="8"
+            value={compareOctave}
+            onChange={(e) => setCompareOctave(parseInt(e.target.value))}
+          />
           <input
             type="number"
+            pattern="[0-9]*"
+            inputMode="numeric"
+            min="0"
+            max="8"
             value={compareOctave}
             onChange={e => setCompareOctave(parseInt(e.target.value))}
           />
